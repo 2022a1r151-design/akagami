@@ -1,0 +1,46 @@
+{
+    "ip": "23.50.12.65",
+    "hostname": "akamai-apigateway-stg-finplateng.tesla.com",
+    "open_ports": [
+        {
+            "port": "21",
+            "protocol": "tcp",
+            "service": "ftp",
+            "banner": "",
+            "verified": true,
+            "real_banner": "Open (Silent)"
+        },
+        {
+            "port": "80",
+            "protocol": "tcp",
+            "service": "http",
+            "banner": "AkamaiGHost",
+            "verified": true,
+            "real_banner": "HTTP/1.0 400 Bad Request\r\nServer: AkamaiGHost\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nContent-Length: 312\r\nExpires: Thu, 01 Jan 2026 11:29:06 GMT\r\nDate: Thu, 01 Jan 2026 11:29:06 GMT\r\nConnection: close"
+        },
+        {
+            "port": "443",
+            "protocol": "tcp",
+            "service": "http",
+            "banner": "AkamaiGHost",
+            "verified": true,
+            "real_banner": "Open (Silent)"
+        },
+        {
+            "port": "554",
+            "protocol": "tcp",
+            "service": "rtsp",
+            "banner": "",
+            "verified": true,
+            "real_banner": "Open (Silent)"
+        },
+        {
+            "port": "1723",
+            "protocol": "tcp",
+            "service": "pptp",
+            "banner": "",
+            "verified": true,
+            "real_banner": "Open (Silent)"
+        }
+    ]
+}

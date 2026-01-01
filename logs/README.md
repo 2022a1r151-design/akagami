@@ -1,0 +1,2 @@
+# Logs
+For debugging errors
