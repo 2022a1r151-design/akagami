@@ -1,0 +1,11 @@
+https://akamai-apigateway-finplateng-routeone.tesla.com
+https://akamai-apigateway-finplateng-defi.tesla.com
+https://akamai-apigateway-stg-finplateng-defi.tesla.com
+https://akamai-apigateway-stg-finplateng.tesla.com
+https://akamai-apigateway-finplateng.tesla.com
+https://akamai-apigateway-stg-finplateng-routeone.tesla.com
+https://apf-api.eng.vn.cloud.tesla.com
+https://assets.engage.tesla.com
+https://auth.eng.usw.vn.cloud.tesla.com
+https://auth.eng.euw1.vn.cloud.tesla.com
+https://device-api.eng.eu.vn.cloud.tesla.com
