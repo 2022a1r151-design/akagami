@@ -100,7 +100,8 @@ class ServiceVerifier:
 # --- TEST BLOCK ---
 if __name__ == "__main__":
     # Auto-find the parsed JSON
-    results_dir = r"C:\CTF CHallange\Akagami-v2\data\nmap_results"
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    results_dir = os.path.join(base_dir, "data", "nmap_results")
     
     # Find the most recent PARSED json
     try:

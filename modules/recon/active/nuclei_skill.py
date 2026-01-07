@@ -104,7 +104,8 @@ class NucleiSkill:
 # --- TEST BLOCK ---
 if __name__ == "__main__":
     # Point this to your VERIFIED json
-    results_dir = r"C:\CTF CHallange\Akagami-v2\data\nmap_results"
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    results_dir = os.path.join(base_dir, "data", "nmap_results")
     
     # Auto-find latest Verified or Parsed JSON
     try:

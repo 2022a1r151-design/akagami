@@ -1,0 +1,36 @@
+{
+    "ip": "49.44.204.89",
+    "hostname": "akamai-apigateway-teslarpsapi.tesla.com",
+    "open_ports": [
+        {
+            "port": "21",
+            "protocol": "tcp",
+            "service": "ftp",
+            "banner": ""
+        },
+        {
+            "port": "80",
+            "protocol": "tcp",
+            "service": "http",
+            "banner": "AkamaiGHost"
+        },
+        {
+            "port": "443",
+            "protocol": "tcp",
+            "service": "http",
+            "banner": "AkamaiGHost"
+        },
+        {
+            "port": "554",
+            "protocol": "tcp",
+            "service": "rtsp",
+            "banner": ""
+        },
+        {
+            "port": "1723",
+            "protocol": "tcp",
+            "service": "pptp",
+            "banner": ""
+        }
+    ]
+}

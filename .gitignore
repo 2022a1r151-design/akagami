@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Project specific
+session_cookie.txt
+logs/
+*.log
+
+# Workspace
+.vscode/
+
+# Ignore scan results by default to keep repo clean
+# data/nmap_results/
+# data/fuzzing_results/
+# data/secrets_*.json
+# alive_hosts.json

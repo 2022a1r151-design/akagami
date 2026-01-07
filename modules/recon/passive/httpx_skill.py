@@ -6,10 +6,19 @@ import sys
 
 class HTTPXSkill:
     def __init__(self):
-        self.tool_name = "httpx.exe" if os.name == 'nt' else "httpx"
+        if os.name == 'nt':
+            self.tool_name = "httpx.exe"
+        else:
+            # On Linux, especially Kali, 'httpx' can conflict with a Python library.
+            # We check for httpx-toolkit (Kali name) or the standard httpx binary.
+            self.tool_name = shutil.which("httpx-toolkit") or shutil.which("httpx")
+            
+            # If it's the wrong httpx (the python one), it won't have the -version flag we expect
+            # but for now let's just ensure we found SOMETHING. 
+            # Given we just installed it to /usr/local/bin, it should be found.
         
-        if not shutil.which(self.tool_name):
-            print(f"❌ Critical Error: '{self.tool_name}' not found. Please install it.")
+        if not self.tool_name or not shutil.which(self.tool_name):
+            print(f"❌ Critical Error: HTTPX not found. Please install ProjectDiscovery's httpx.")
             sys.exit(1)
 
     def run(self, input_file):
@@ -116,7 +125,8 @@ class HTTPXSkill:
 if __name__ == "__main__":
     # Point this to the file you just created!
     # Update "tesla.com_subdomains.json" if your filename is different
-    input_path = r"C:\CTF CHallange\akagami-v2\data\tesla.com_subdomains.json"
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    input_path = os.path.join(base_dir, "data", "tesla.com_subdomains.json")
     
     skill = HTTPXSkill()
     skill.run(input_path)

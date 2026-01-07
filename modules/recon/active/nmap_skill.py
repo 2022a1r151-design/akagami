@@ -92,7 +92,8 @@ class NmapSkill:
 # --- TEST BLOCK ---
 if __name__ == "__main__":
     # Point this to your ALIVE hosts file
-    input_path = r"C:\CTF CHallange\Akagami-v2\data\alive_hosts.json"
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    input_path = os.path.join(base_dir, "data", "alive_hosts.json")
     
     skill = NmapSkill()
     
