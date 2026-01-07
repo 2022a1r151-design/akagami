@@ -8,13 +8,16 @@
 - [x] Directory Fuzzing on `cmms.tx.tesla.com` (Auto-calibration filtered all results)
 - [x] Discovered `/status` and `/favicon.ico` on `auth.prd.usw.vn.cloud.tesla.com`
 - [x] Upgraded `fuzzer_skill.py` to v2.0 (Added `-ac`, `-recursion`, focused on 200/403)
+- [x] Create `js_secret_skill.py` for automated JS analysis
+- [x] Scan `auth-stage.tesla.com` for JS secrets (Found disabled captcha, backend URLs, Client IDs)
+- [x] Documented full framework in `README.md`
+- [x] Pushed code to GitHub Repository
 
 ## 🚧 In Progress
-- [x] Create `js_secret_skill.py` for automated JS analysis
-- [ ] Scan `auth-stage.tesla.com` for JS secrets
 - [ ] Deep analysis of `auth-stage.tesla.com` authentication mechanisms
-- [ ] Fingerprint technology stack on high-value targets
-- [ ] Test for common authentication bypasses
+- [ ] Fingerprint technology stack on high-value targets (WhatWeb/Wappalyzer)
+- [ ] Test for common authentication bypasses on discovered endpoints
+- [ ] Investigate `backendOrigin` URLs found in `auth-stage.tesla.com` JS files
 
 ## 📋 Backlog
 - [ ] Create `tech_detect_skill.py` for WhatWeb/Wappalyzer integration
